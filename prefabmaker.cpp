@@ -14,14 +14,14 @@ prefabMaker::prefabMaker()
 
 void prefabMaker::Open_Files()
 {
-    QFile file("D:/coding/Test_files/utes-house-template-1.txt");
+    QFile file("D://Test_files//utes-house-template-1.txt");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         qDebug() << "Unable to open " << file.fileName();
         exit (1);
     }
 
-    QFile file2("D:/coding/Test_files/deletemesomuch.txt");
+    QFile file2("D://Test_files//deletemesomuch.txt");
     if (!file2.open(QIODevice::WriteOnly | QIODevice::Text))
     {
         qDebug() << "Unable to open " << file2.fileName();
